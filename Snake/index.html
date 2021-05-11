@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <div id="container">
+        <div id="pnl">
+            <button id="txt" onclick="location.reload()">Tentar novamente</button>
+        </div>
+    </div>
+</body>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="gamestyle.css">
+<script>
+	class Animal{
+		constructor(patas){
+			this.patas = patas;
+			this.respirar = function(){
+				return 'respirando...';
+			}
+			this.andar = function(dir){
+			let aux = 'andando ';
+				switch(dir){
+					case 'frente': aux+='frente...'; break;
+					case 'tras': aux+='tras...'; break;
+					default: aux+='nada...'; break;
+				}
+				return aux;
+			}
+		}
+		static nomeClasse = 'Animal';
+		static set mudaNomeClasse(n){
+			this.nomeClasse = n;
+			//Animal.nomeClasse = n
+		}
+		static get pegaNomeClasse(){
+			return this.nomeClasse;
+		}
+	}
+	class AnimalAquatico extends Animal{
+		constructor(nadadeiras){
+			this.nadadeiras = nadadeiras;
+		}
+	}
+	
+	Animal.a = 'a1';
+	Animal.prototype.a = 'a2';
+	
+	let cachorro = new Animal(4);
+
+	console.log(cachorro.constructor.a)
+	
+</script>
+<script type="text/javascript" src="gamescript.js"></script>
+</head>
+</html>

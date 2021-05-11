@@ -1,0 +1,40 @@
+.cssContainer{
+    position:absolute;
+    top:50%;
+    left:50%;
+    border-radius: 20px;
+    background-color: beige;
+    box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.1);
+}
+.cssFruit{
+    border-radius: 100px;
+    background-color: rgb(250, 109, 109);
+    position: absolute;
+    z-index: 3;
+}
+.cssSnake{
+    position: absolute;
+    z-index: 4;
+}
+.cssPont{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 100px;
+    margin-left: -20px;
+    margin-top: -60px;
+    font-family: Consolas;
+    color: rgb(226, 226, 190);
+    z-index: 1;
+}
+#pnl{
+    background-color: rgba(43, 255, 149, 0.308);
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    font-family: arial;
+    color: white;
+    text-align: center;
+}
